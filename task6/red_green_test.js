@@ -1,20 +1,14 @@
 
- var rg = new RedOrGreen("mySquare");
-rg.makeGreen();
-if(document.getElementById("mySquare").style.backgroundColor === "green")
-{
-alert("good");
-}
-else
-{
-alert("bad color")
-}// write code to check if it is green now
+var rg = new RedOrGreen("div");
 rg.makeRed();
-if (document.getElementById("mySquare").style.backgroundColor === "red")
-{
-alert("good");
+if(document.body.lastChild.style.backgroundColor === "red"){
+alert("sucess is green");
+}else{
+alert("Not red");
 }
-else
-{
-alert("bad color");
-}// write code to check if it is red now
+rg.makeGreen();
+if(document.body.style.backgroundColor === "green"){
+alert("sucess is green");
+}else{
+alert("Not red");
+}
